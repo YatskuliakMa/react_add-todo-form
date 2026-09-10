@@ -68,7 +68,9 @@ export const App = () => {
 
       <form onSubmit={handleSubmit}>
         <div className="field">
+          <label htmlFor="title-input">Title</label>
           <input
+            id="title-input"
             type="text"
             data-cy="titleInput"
             placeholder="Enter a title"
@@ -82,7 +84,9 @@ export const App = () => {
         </div>
 
         <div className="field">
+          <label htmlFor="user-select">User</label>
           <select
+            id="user-select"
             data-cy="userSelect"
             value={userId}
             onChange={event => {
